@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/grey"
+              tools:context="com.zhuoxin.eshop.main.me.v.MeFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <com.pkmmte.view.CircularImageView
+            android:layout_marginTop="@dimen/dp20"
+            android:id="@+id/me_civ"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp120"
+            android:background="@mipmap/user_ico"
+            android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp15"
+                android:id="@+id/me_tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <TextView
+            android:id="@+id/me_tv_userinfo"
+            style="@style/style_tv_me_item"
+            android:text="@string/me_person_info"/>
+
+        <TextView
+            android:id="@+id/me_tv_goods"
+            style="@style/style_tv_me_item"
+            android:text="@string/me_person_goods"/>
+
+        <TextView
+            android:id="@+id/me_tv_upload"
+            style="@style/style_tv_me_item"
+            android:text="@string/me_goods_upload"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

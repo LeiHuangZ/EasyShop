@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="style_tv_menu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/text_color_hint</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp10</item>
+    </style>
+
+    <style name="style_tv_me_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp60</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">@dimen/dp10</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:textColor">@color/text_color_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@drawable/selector_item_go</item>
+        <item name="android:paddingLeft">@dimen/dp10</item>
+        <item name="android:paddingRight">@dimen/dp10</item>
+    </style>
+
+
+
+    <style name="style_register_edt">
+        <item name="android:drawablePadding">@dimen/dp6</item>
+        <item name="android:paddingLeft">@dimen/dp6</item>
+        <item name="android:paddingRight">@dimen/dp6</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/text_goods_name</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@mipmap/edit_bg_long</item>
+    </style>
+
+    <style name="AppTheme.Button.EasyShop" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dp20</item>
+    </style>
+
+</resources>

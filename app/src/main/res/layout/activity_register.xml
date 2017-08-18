@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/title_register"/>
+
+    <EditText
+        android:id="@+id/et_username"
+        style="@style/style_register_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp23"
+        android:layout_marginRight="@dimen/dp23"
+        android:layout_marginTop="@dimen/dp31"
+        android:background="@color/white"
+        android:drawableStart="@drawable/selector_ic_person"
+        android:hint="@string/username"
+        android:maxLength="20"/>
+
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/style_register_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_alignEnd="@+id/et_username"
+        android:layout_alignParentEnd="@+id/et_username"
+        android:layout_alignParentStart="@+id/et_username"
+        android:layout_alignStart="@+id/et_username"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="@dimen/dp6"
+        android:background="@color/white"
+        android:drawableStart="@drawable/selector_ic_lock"
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/et_pwdAgain"
+        style="@style/style_register_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_alignEnd="@+id/et_pwd"
+        android:layout_alignParentEnd="@+id/et_pwd"
+        android:layout_alignParentStart="@+id/et_pwd"
+        android:layout_alignStart="@+id/et_pwd"
+        android:layout_below="@+id/et_pwd"
+        android:layout_marginTop="@dimen/dp6"
+        android:background="@color/white"
+        android:drawableStart="@drawable/selector_ic_lock"
+        android:hint="@string/pwd_again"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/AppTheme.Button.EasyShop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp58"
+        android:layout_alignEnd="@+id/et_pwdAgain"
+        android:layout_alignParentEnd="@+id/et_pwdAgain"
+        android:layout_alignParentStart="@+id/et_pwdAgain"
+        android:layout_alignStart="@+id/et_pwdAgain"
+        android:layout_below="@+id/et_pwdAgain"
+        android:layout_marginTop="@dimen/dp40"
+        android:enabled="false"
+        android:text="@string/register"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/title_register"/>
+
+    <EditText
+        android:id="@+id/name"
+        style="@style/style_register_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_below="@+id/toolBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp23"
+        android:layout_marginRight="@dimen/dp23"
+        android:layout_marginTop="@dimen/dp31"
+        android:background="@color/white"
+        android:drawableStart="@drawable/selector_ic_person"
+        android:hint="@string/username"
+        android:maxLength="20"/>
+
+    <EditText
+        android:id="@+id/psd"
+        style="@style/style_register_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignParentEnd="@+id/name"
+        android:layout_alignParentStart="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="@dimen/dp6"
+        android:background="@color/white"
+        android:drawableStart="@drawable/selector_ic_lock"
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/login"
+        style="@style/AppTheme.Button.EasyShop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp58"
+        android:layout_alignEnd="@+id/psd"
+        android:layout_alignParentEnd="@+id/psd"
+        android:layout_alignParentStart="@+id/psd"
+        android:layout_alignStart="@+id/psd"
+        android:layout_below="@+id/psd"
+        android:layout_marginTop="@dimen/dp40"
+        android:enabled="false"
+        android:text="@string/login"/>
+
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:text="@string/fast_register"
+        android:layout_alignEnd="@id/login"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/selector_tv"
+        android:textColor="@color/colorPrimaryDark"/>
+</RelativeLayout>
