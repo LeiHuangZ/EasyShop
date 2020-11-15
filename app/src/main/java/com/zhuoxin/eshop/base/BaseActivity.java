@@ -1,8 +1,9 @@
 package com.zhuoxin.eshop.base;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 封装Activity，封装跳转方法

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.zhuoxin.eshop.activity.MainActivity">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/main_tb"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp60"
@@ -22,9 +22,9 @@
             android:textColor="@color/grey"
             android:gravity="center"/>
 
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/main_vp"
         android:layout_width="match_parent"
         android:layout_height="0dp"

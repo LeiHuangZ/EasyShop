@@ -1,8 +1,9 @@
 package com.zhuoxin.eshop.main.goods.m;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.zhuoxin.eshop.R;

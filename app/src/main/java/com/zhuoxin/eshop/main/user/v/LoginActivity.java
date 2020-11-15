@@ -2,9 +2,6 @@ package com.zhuoxin.eshop.main.user.v;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -14,6 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
 
 import com.zhuoxin.eshop.R;
 import com.zhuoxin.eshop.base.BaseActivity;
@@ -69,8 +70,8 @@ public class LoginActivity extends BaseActivity implements ILoginActivity {
         }
 
         /*
-        * 为EditText设置addTextChangedListener，传入TextWatcher，需要自定义一个TextWatcher，在下面自定义
-        */
+         * 为EditText设置addTextChangedListener，传入TextWatcher，需要自定义一个TextWatcher，在下面自定义
+         */
         mPsd.addTextChangedListener(mTextWatcher);
         mName.addTextChangedListener(mTextWatcher);
     }
@@ -88,8 +89,8 @@ public class LoginActivity extends BaseActivity implements ILoginActivity {
         }
 
         /*
-        * 编辑框文本内容改变后调用
-        */
+         * 编辑框文本内容改变后调用
+         */
         @Override
         public void afterTextChanged(Editable s) {
             //调用TextUtils.isEmpty方法判断是否为空将两个结果赋值给一个boolean变量

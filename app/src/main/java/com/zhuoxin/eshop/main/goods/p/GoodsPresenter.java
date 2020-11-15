@@ -1,14 +1,11 @@
 package com.zhuoxin.eshop.main.goods.p;
 
-import android.content.Context;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.zhuoxin.eshop.main.goods.m.GoodsBiz;
 import com.zhuoxin.eshop.main.goods.m.IGoodsBiz;
 import com.zhuoxin.eshop.main.goods.v.GoodsFragment;
-import com.zhuoxin.eshop.main.me.v.MeFragment;
 
 /**
  * 加载商品信息的控制台，负责调度
